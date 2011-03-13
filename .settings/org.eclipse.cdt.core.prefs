@@ -1,0 +1,7 @@
+#Sun Mar 13 20:42:19 CET 2011
+eclipse.preferences.version=1
+environment/project/0.530031527/PATH/delimiter=\:
+environment/project/0.530031527/PATH/operation=append
+environment/project/0.530031527/PATH/value=/usr/local/cuda/bin\:/Library/Frameworks/Python.framework/Versions/2.7/bin\:/usr/bin\:/bin\:/usr/sbin\:/sbin\:/usr/local/bin\:/usr/local/git/bin\:/usr/texbin\:/usr/X11/bin\:
+environment/project/0.530031527/append=true
+environment/project/0.530031527/appendContributed=true
