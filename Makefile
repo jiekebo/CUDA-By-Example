@@ -1,7 +1,7 @@
 NVCCFLAGS := -g --use_fast_math
 LIBS	:= -Xlinker -framework,GLUT -Xlinker -framework,OpenGL
 
-all:		3-parameter 3-query 3-simplekernel 4-vecsum 4-mandel
+all:		3-parameter 3-query 3-simplekernel 4-vecsum 4-mandel 5-gpuripple
 
 3-parameter:	3-parameter.cu
 		nvcc 3-parameter.cu -o 3-parameter.o $(NVCCFLAGS)
@@ -17,7 +17,9 @@ all:		3-parameter 3-query 3-simplekernel 4-vecsum 4-mandel
 
 4-mandel:	4-mandel.cu
 		nvcc 4-mandel.cu -o 4-mandel.o $(NVCCFLAGS) $(LIBS)
+5-gpuripple: 5-gpuripple.cu
+		nvcc 5-gpuripple.cu -o 5-gpuripple.o $(NVCCFLAGS) $(LIBS)
 
 clean:
-		rm 3-parameter.o 3-query.o 3-simplekernel.o 4-vecsum.o 4-mandel.o
+		rm 3-parameter.o 3-query.o 3-simplekernel.o 4-vecsum.o 4-mandel.o 5-gpuripple.o
 
