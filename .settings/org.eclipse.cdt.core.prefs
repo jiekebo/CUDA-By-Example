@@ -1,7 +1,17 @@
-#Sun Mar 13 20:42:19 CET 2011
+#Wed Apr 20 08:57:48 CEST 2011
 eclipse.preferences.version=1
 environment/project/0.530031527/PATH/delimiter=\:
 environment/project/0.530031527/PATH/operation=append
 environment/project/0.530031527/PATH/value=/usr/local/cuda/bin\:/Library/Frameworks/Python.framework/Versions/2.7/bin\:/usr/bin\:/bin\:/usr/sbin\:/sbin\:/usr/local/bin\:/usr/local/git/bin\:/usr/texbin\:/usr/X11/bin\:
 environment/project/0.530031527/append=true
 environment/project/0.530031527/appendContributed=true
+environment/project/ai3.toolchain.cuda.1210553459/PATH/delimiter=\:
+environment/project/ai3.toolchain.cuda.1210553459/PATH/operation=append
+environment/project/ai3.toolchain.cuda.1210553459/PATH/value=\:/usr/local/cuda/bin
+environment/project/ai3.toolchain.cuda.1210553459/append=true
+environment/project/ai3.toolchain.cuda.1210553459/appendContributed=true
+environment/project/ai3.toolchain.cuda.1375982794/PATH/delimiter=\:
+environment/project/ai3.toolchain.cuda.1375982794/PATH/operation=replace
+environment/project/ai3.toolchain.cuda.1375982794/PATH/value=/usr/bin\:/bin\:/usr/sbin\:/sbin\:/usr/local/cuda/bin
+environment/project/ai3.toolchain.cuda.1375982794/append=true
+environment/project/ai3.toolchain.cuda.1375982794/appendContributed=true
