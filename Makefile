@@ -1,13 +1,12 @@
-NVCCFLAGS := -g --use_fast_math
-LIBS	:= -Xlinker -framework,GLUT -Xlinker -framework,OpenGL
+NVCCFLAGS 	:= -g --use_fast_math
+LIBS		:= -Xlinker -framework,GLUT -Xlinker -framework,OpenGL
+SRCS 		= $(wildcard *.cu)
+BINS 		= $(patsubst %.cu,%,$(SRCS))
 
-SRCS = $(wildcard *.cu)
-OBJS = $(patsubst %.cu,%.o,$(SRCS))
-
-all: $(OBJS)
+all: $(BINS)
 		
-%.o: %.cu
-	nvcc $(NVCCFLAGS) $(LIBS)  $< -o ./bin/$@
+%: %.cu
+	nvcc $(NVCCFLAGS) $(LIBS) $< -o ./bin/$@
 
 clean:
 	rm ./bin/*
